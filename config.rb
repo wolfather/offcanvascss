@@ -8,8 +8,13 @@ sass_dir = "dev/sass"
 #images_dir = "images"
 #javascripts_dir = "scripts"
 
+noLineComments = true
+assetCacheBuster = false
+boring = false
+clean = true
+
 # You can select your preferred output style here (can be overridden via the command line):
-output_style = :compressed #or :expanded #or :nested or :compact
+output_style = :expanded #or :compressed or :expanded or :nested or :compact
 
 # To enable relative paths to assets via compass helper functions. Uncomment:
 # relative_assets = true

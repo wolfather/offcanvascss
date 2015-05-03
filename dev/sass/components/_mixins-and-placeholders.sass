@@ -7,7 +7,14 @@
 
 
 =translateX($axisX: 0)
-	transform: translateX($axisX)
+	-webkit-transform: translate($axisX, 0)
+	-ms-transform: translate($axisX, 0)
+	-o-transform: translate($axisX, 0)
+	transform: translate($axisX, 0)
+
+
+=fontDefault
+	font: 500 1.2em/1em sans-serif, monospace
 
 
 %opacityOne

@@ -1,20 +1,9 @@
-#Offline Application
+#Offcanvas CSS
 
-I created this simple webapp based on javascript, angularjs, html5, css3 as a test for mobile and desktop devices to run on and offline as the same way.
-
-
-##Some features:
-
-- Store and manipulate data in local browser, even offline status;
-- Mobile navigation without javascript or plugin is required;
-- Detect the device type as well the orientation;
-- Only as an experimental test, I've created a fullscreen lib to navigate;
+Something that always bother me is see developers using and/or depending of the javascript and jQuery plugins for everything. A simple modal, accordion or a carousel.
+Thinking on it, I've created this version of offcanvas, based on Foundation offcanvas plugin, but without javascript. Just using our good buddy, CSS3.
 
 
+##Bonus content
 
-##TODO
-- Improve the documentation;
-- Make the coverage tests in the code generated;
-- Split the libs that was created, like: notify, mediaquery, localstorage and others to separated projects;
-
--- I'll continue this README later;
+As a bonus, I put a carousel navigation just to simulating the horizontal scroll content.

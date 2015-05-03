@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Offcanvas css</title>
+    <link rel="stylesheet" href="assets/css/offcanvas.min.css">
+    <body>
+      <div data-role="window" class="main">
+        <!-- Checkboxes have the control for toggle the sidebars-->
+        <input type="checkbox" id="openLeftSidebar">
+        <input type="checkbox" id="openRightSidebar">
+        <!-- .leftSidebar-->
+        <div data-role="leftSidebar" class="sidebar leftSidebar">
+          <ul>
+            <li>Home</li>
+            <li>Edit Profile</li>
+            <li>Logout</li>
+          </ul>
+        </div>
+        <!-- That close the .leftSidebar-->
+        <label for="openLeftSidebar" class="closeSidebar closeLeftSidebar"></label>
+        <!-- .rightSidebar-->
+        <div data-role="rightSidebar" class="sidebar rightSidebar">
+          <!-- Mockup list for testing lateral scroll-->
+          <ol>
+            <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+            <li>Aliquam tincidunt mauris eu risus.</li>
+            <li>Vestibulum auctor dapibus neque.</li>
+            <li>Nunc dignissim risus id metus.</li>
+            <li>Cras ornare tristique elit.</li>
+            <li>Vivamus vestibulum nulla nec ante.</li>
+            <li>Praesent placerat risus quis eros.</li>
+            <li>Fusce pellentesque suscipit nibh.</li>
+            <li>Integer vitae libero ac risus egestas placerat.</li>
+            <li>Vestibulum commodo felis quis tortor.</li>
+            <li>Ut aliquam sollicitudin leo.</li>
+            <li>Cras iaculis ultricies nulla.</li>
+            <li>Donec quis dui at dolor tempor interdum.</li>
+            <li>Vivamus molestie gravida turpis.</li>
+            <li>Fusce lobortis lorem at ipsum semper sagittis.</li>
+            <li>Nam convallis pellentesque nisl.</li>
+            <li>Integer malesuada commodo nulla.</li>
+          </ol>
+        </div>
+        <!-- That close the .rightSidebar-->
+        <label for="openRightSidebar" class="closeSidebar closeRightSidebar"></label>
+        <div class="content">
+          <nav class="navigationBar">
+            <label for="openLeftSidebar" class="buttonOffCanvas openLeftSidebar"></label>
+            <label for="openRightSidebar" class="buttonOffCanvas openRightSidebar"></label><a href="#/" class="brandTop">BRAND</a>
+          </nav>
+          <input id="openPage1" type="radio" name="scroll" value="1" checked class="navigationinput">
+          <input id="openPage2" type="radio" name="scroll" value="2" class="navigationinput">
+          <input id="openPage3" type="radio" name="scroll" value="3" class="navigationinput">
+          <input id="openPage4" type="radio" name="scroll" value="4" class="navigationinput">
+          <input id="openPage5" type="radio" name="scroll" value="5" class="navigationinput">
+          <div class="window">
+            <div class="page page1">
+              <h1>Page 1</h1>
+              <label for="openPage2" class="button">next &gt;</label>
+              <article class="articleContent">
+                <p>Bacon ipsum dolor amet bresaola flank swine pig, tail ham boudin capicola salami chuck ribeye meatloaf. Doner pancetta jowl beef. Swine corned beef ham hock pig, rump picanha brisket meatloaf sausage beef. Shoulder salami bresaola ham t-bone picanha tongue swine tri-tip pancetta rump turducken. Flank fatback biltong strip steak, jerky hamburger pork belly pancetta jowl spare ribs swine shoulder frankfurter.</p>
+                <p>Pork belly meatloaf hamburger turkey pork chop cupim andouille ham pig alcatra prosciutto boudin strip steak meatball chicken. Shankle porchetta short loin, alcatra capicola tri-tip flank shoulder frankfurter pork chop. Venison beef pork chop, ribeye prosciutto pig pastrami rump. Venison beef ribs pork belly turkey jowl pancetta brisket beef t-bone porchetta. Flank meatball sirloin, ribeye ball tip frankfurter tongue ground round beef pastrami picanha short ribs chicken hamburger ham hock. Jerky salami pork beef ribs hamburger venison ham. Leberkas alcatra drumstick, tongue spare ribs venison chuck hamburger corned beef pork chop t-bone chicken tri-tip.</p>
+              </article>
+            </div>
+            <div class="page page2">
+              <div class="breadcrumb">
+                <label for="openPage1" class="link goback">back</label>
+              </div>
+              <h1>Page 2</h1>
+              <label for="openPage3" class="button">page 3 &gt;</label>
+              <article class="articleContent">
+                <p>Pancetta filet mignon pork loin ham hock bresaola boudin kielbasa meatloaf tail bacon tenderloin frankfurter flank rump brisket. Pork belly ground round hamburger meatloaf, alcatra chicken ribeye fatback pig sirloin. Ball tip beef pig biltong, chicken turducken venison. Meatball t-bone pig bacon venison. Beef sausage filet mignon alcatra, flank chuck turkey capicola pig.</p>
+                <p>Ham short loin tongue short ribs, tri-tip bresaola tail shank. Jerky shankle picanha, andouille bresaola cupim pancetta shank pork loin tail bacon. Turducken flank ribeye doner frankfurter meatball. Chuck corned beef chicken ball tip spare ribs biltong brisket. Frankfurter capicola cupim, spare ribs pig chuck beef alcatra.</p>
+                <p>Bresaola sausage swine pork chop landjaeger shank meatloaf sirloin shoulder ground round beef ribs tongue. Boudin turducken doner ground round short ribs t-bone bacon biltong. Pork loin sirloin drumstick beef, turkey leberkas ball tip bresaola fatback strip steak doner ham hock biltong swine frankfurter. Porchetta flank tongue jerky, alcatra doner pork sirloin drumstick venison. Shankle t-bone tongue beef leberkas sirloin corned beef shoulder tail chuck biltong tri-tip shank tenderloin meatloaf.</p>
+                <p>Does your lorem ipsum text long for something a little meatier? Give our generator a try… it’s tasty!</p>
+              </article>
+            </div>
+            <div class="page page3">
+              <div class="breadcrumb">
+                <label for="openPage2" class="link goback">back</label>
+              </div>
+              <h1>Page 3</h1>
+              <label for="openPage4" class="button">page 4 &gt;</label>
+            </div>
+            <div class="page page4">
+              <div class="breadcrumb">
+                <label for="openPage2" class="link goback">back</label>
+              </div>
+              <h1>Page 4</h1>
+              <label for="openPage5" class="button">page 5 &gt;</label>
+            </div>
+            <div class="page page5">
+              <div class="breadcrumb">
+                <label for="openPage4" class="link goback">back</label>
+              </div>
+              <h1>Page 5</h1>
+              <label for="openPage1" class="button">&lt; page 1</label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </body>
+  </head>
+</html>

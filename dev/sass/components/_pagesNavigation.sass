@@ -5,15 +5,60 @@
 //	.page5: axisX 400%;
 
 
+//top content
+.navigationBar
+	padding: 0 10%
+	position: relative
+	height: 40px
+	background: $menuBgColor
+
+
+.buttonOffCanvas
+	display: block
+	width: 10%
+	height: 100%
+
+	position: absolute
+	top: 0
+
+	&:before
+		content: ""
+		display: block
+		width: 60%
+		position: absolute
+		top: 25%
+		left: 20%
+		box-shadow: 0 0px 0 2px $menuStripesColor,0 7px 0 2px $menuStripesColor,0 14px 0 2px $menuStripesColor
+	
+	&.openLeftSidebar
+		left: 0
+	&.openRightSidebar
+		right: 0
+
+
+
+.brandTop
+	display: block
+	width: 56%
+	height: 100%
+	margin: 0 auto
+	text-align: center
+	font: 700 1em/40px sans-serif, monospace
+	color: $menuStripesColor
+
+//top content
+
+
+
 .navigationinput
 	display: none
 
 
 .page
 	+navigationtransform
-	+fontDefault
 	@extend %widthHeightHundredPorcent
 
+	height: 94%
 	opacity: 0
 	position: absolute
 
@@ -73,46 +118,6 @@
 		@extend %opacityOne
 
 
-
-.navigationBar
-	padding: 0 10%
-	position: relative
-	height: 40px
-	background: $menuBgColor
-
-
-.buttonOffCanvas
-	display: block
-	width: 10%
-	height: 100%
-
-	position: absolute
-	top: 0
-
-	&:before
-		content: ""
-		display: block
-		width: 60%
-		position: absolute
-		top: 25%
-		left: 20%
-		box-shadow: 0 0px 0 2px $menuStripesColor,0 7px 0 2px $menuStripesColor,0 14px 0 2px $menuStripesColor
-	
-	&.openLeftSidebar
-		left: 0
-	&.openRightSidebar
-		right: 0
-
-
-
-.brandTop
-	display: block
-	width: 56%
-	height: 100%
-	margin: 0 auto
-	text-align: center
-	font: 700 1em/40px sans-serif, monospace
-	color: $menuStripesColor
 
 
 

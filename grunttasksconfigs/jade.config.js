@@ -2,18 +2,31 @@ module.exports = function() {
 	
 	return {
 		
-		compile: {
+		prod: {
 			
 			options: {
 				pretty: false,
 				debug: false,
-				timestamp: "<%= new Date().getTime() %>"
+				comments: false
 			},
 			
 			files: {
 				'index.html': ['dev/views/index.jade']
 			}
 
+		},
+
+		dev : {
+			options: {
+				pretty: true,
+				debug: true,
+				comments: true,
+				timestamp: "<%= new Date().getTime() %>"
+			},
+			
+			files: {
+				'index-dev.html': ['dev/views/index.jade']
+			}
 		}
 
 	};

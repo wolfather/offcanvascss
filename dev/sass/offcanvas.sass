@@ -1,9 +1,8 @@
-@import "components/_baseStyles"
 @import "components/_mixins-and-placeholders"
 @import "components/_pagesNavigation"
+@import "components/_baseStyles"
 
-
-
+//simple reset
 body
 	padding: 0
 	margin: 0
@@ -29,40 +28,6 @@ body
 	@extend %widthHeightHundredPorcent
 
 
-.sidebar,
-.closeSidebar
-	width: 80%
-	position: absolute
-	top: 0
-	bottom: 0
-	overflow: hidden
-
-
-
-.sidebar
-	background: $bgSidebarColor
-	z-index: 2
-
-	ul
-		overflow: scroll
-		height: 100%
-		margin: 0
-		padding: 0
-	
-	li
-		position: relative
-		margin: 0 0 25px
-
-		&:before
-			content: ""
-			display: block
-			position: absolute
-			width: 80%
-			height: 35px
-			background: #fc0
-		
-
-
 
 
 .closeSidebar,
@@ -78,11 +43,10 @@ body
 	right: 0
 
 
-.leftSidebar,
-.rightSidebar,
+.sidebar,
 .content,
 .window
-	-webkit-transition: transform 250ms ease 0s
+	-webkit-transition: all 250ms ease 0s
 	-moz-transition: transform 250ms ease 0s
 	-ms-transition: transform 250ms ease 0s
 	-o-transition: transform 250ms ease 0s
@@ -90,6 +54,27 @@ body
 
 
 
+.sidebar,
+.closeSidebar
+	position: absolute
+	top: 0
+	bottom: 0
+	overflow: hidden
+
+
+
+.sidebar
+	width: 80%
+	background: $bgSidebarColor
+	z-index: 2
+
+	ul, ol
+		overflow: scroll
+		height: 88%
+		margin-top: 40px
+	
+	li
+		margin: 0 0 25px
 
 .leftSidebar
 	+translateX(-100%)

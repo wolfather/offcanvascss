@@ -6,6 +6,10 @@ input(type='checkbox', id='openRightSidebar')
 
 // .leftSidebar
 div(class='sidebar leftSidebar', data-role='leftSidebar')
+	ul
+		li Home
+		li Edit Profile
+		li Logout
 
 // That close the .leftSidebar
 label(class='closeSidebar closeLeftSidebar', for='openLeftSidebar')
@@ -14,14 +18,26 @@ label(class='closeSidebar closeLeftSidebar', for='openLeftSidebar')
 
 // .rightSidebar
 div(class='sidebar rightSidebar', data-role='rightSidebar')
-	// Mockup list for testing scroll
+	// Mockup list for testing lateral scroll
 	
-	-var j = 1
-	-var mocklist = 50
-
-	ul
-		while j < mocklist
-			li= j++
+	ol
+		li Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+		li Aliquam tincidunt mauris eu risus.
+		li Vestibulum auctor dapibus neque.
+		li Nunc dignissim risus id metus.
+		li Cras ornare tristique elit.
+		li Vivamus vestibulum nulla nec ante.
+		li Praesent placerat risus quis eros.
+		li Fusce pellentesque suscipit nibh.
+		li Integer vitae libero ac risus egestas placerat.
+		li Vestibulum commodo felis quis tortor.
+		li Ut aliquam sollicitudin leo.
+		li Cras iaculis ultricies nulla.
+		li Donec quis dui at dolor tempor interdum.
+		li Vivamus molestie gravida turpis.
+		li Fusce lobortis lorem at ipsum semper sagittis.
+		li Nam convallis pellentesque nisl.
+		li Integer malesuada commodo nulla.
 
 // That close the .rightSidebar
 label(class='closeSidebar closeRightSidebar', for='openRightSidebar')
