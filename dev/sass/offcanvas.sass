@@ -1,0 +1,126 @@
+@import "components/_baseStyles"
+@import "components/_mixins-and-placeholders"
+@import "components/_pagesNavigation"
+
+
+
+body
+	padding: 0
+	margin: 0
+	background-color: #fff
+
+
+.window,
+.main
+	position: absolute
+	@extend %widthHeightHundredPorcent
+
+
+
+.window
+	overflow: visible
+
+
+.main
+	overflow: hidden
+
+
+.content
+	@extend %widthHeightHundredPorcent
+
+
+.sidebar,
+.closeSidebar
+	width: 80%
+	position: absolute
+	top: 0
+	bottom: 0
+	overflow: hidden
+
+
+
+.sidebar
+	background: $bgSidebarColor
+	z-index: 2
+
+	ul
+		overflow: scroll
+		height: 100%
+		margin: 0
+		padding: 0
+	
+	li
+		position: relative
+		margin: 0 0 25px
+
+		&:before
+			content: ""
+			display: block
+			position: absolute
+			width: 80%
+			height: 35px
+			background: #fc0
+		
+
+
+
+
+.closeSidebar,
+#openRightSidebar,
+#openLeftSidebar
+	display: none
+	width: 20%
+	z-index: 2
+
+.closeRightSidebar
+	left: 0
+.closeLeftSidebar
+	right: 0
+
+
+.leftSidebar,
+.rightSidebar,
+.content,
+.window
+	-webkit-transition: transform 250ms ease 0s
+	-moz-transition: transform 250ms ease 0s
+	-ms-transition: transform 250ms ease 0s
+	-o-transition: transform 250ms ease 0s
+	transition: transform 250ms ease 0s
+
+
+
+
+.leftSidebar
+	+translateX(-100%)
+
+.rightSidebar
+	+translateX(125%)
+
+
+#openLeftSidebar[type=checkbox]:checked ~ .content
+	+translateX(80%)
+
+#openRightSidebar[type=checkbox]:checked ~ .content
+	+translateX(-80%)
+
+
+#openLeftSidebar[type=checkbox]:checked ~ .leftSidebar,
+#openRightSidebar[type=checkbox]:checked ~ .rightSidebar
+	overflow: hidden
+
+#openLeftSidebar[type=checkbox]:checked ~ .leftSidebar
+	+translateX
+
+#openRightSidebar[type=checkbox]:checked ~ .rightSidebar
+	+translateX(25%)
+
+
+
+#openLeftSidebar[type=checkbox]:checked ~ .closeLeftSidebar,
+#openRightSidebar[type=checkbox]:checked ~ .closeRightSidebar
+	display: block
+
+
+
+

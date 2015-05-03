@@ -1,0 +1,70 @@
+extends layout
+
+block content
+
+
+	.content
+
+		nav.navigationBar
+			label.buttonOffCanvas.openLeftSidebar(for='openLeftSidebar')
+			label.buttonOffCanvas.openRightSidebar(for='openRightSidebar')
+
+			a.brandTop(href='#/') BRAND
+
+
+		input#openPage1.navigationinput(type='radio', name='scroll', value='1', checked)
+		input#openPage2.navigationinput(type='radio', name='scroll', value='2')
+		input#openPage3.navigationinput(type='radio', name='scroll', value='3')
+		input#openPage4.navigationinput(type='radio', name='scroll', value='4')
+		input#openPage5.navigationinput(type='radio', name='scroll', value='5')
+		
+		.window
+			.page.page1
+				h1 Page 1
+				label.button(for='openPage2') next &gt;
+
+
+				-var i = 1
+
+				ul.gridWrapper
+					while i < 50
+						li(class='gridRule')= i++
+
+				p fim da lista
+			
+
+			.page.page2
+				.breadcrumb
+					label.link.goback(for='openPage1') back
+
+				h1 Page 2
+
+				label.button(for='openPage3') page 3 &gt;
+			
+
+			.page.page3
+				.breadcrumb
+					label.link.goback(for='openPage2') back
+
+				h1 Page 3
+
+				label.button(for='openPage4') page 4 &gt;
+
+			
+			.page.page4
+				.breadcrumb
+					label.link.goback(for='openPage2') back
+
+				h1 Page 4
+				
+				label.button(for='openPage5') page 5 &gt;
+
+			
+			.page.page5
+				.breadcrumb
+					label.link.goback(for='openPage4') back
+
+				h1 Page 5
+				label.button(for='openPage1') &lt; page 1
+
+

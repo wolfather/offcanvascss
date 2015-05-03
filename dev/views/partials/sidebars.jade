@@ -1,0 +1,27 @@
+// Checkboxes have the control for toggle the sidebars
+input(type='checkbox', id='openLeftSidebar')
+input(type='checkbox', id='openRightSidebar')
+
+
+
+// .leftSidebar
+div(class='sidebar leftSidebar', data-role='leftSidebar')
+
+// That close the .leftSidebar
+label(class='closeSidebar closeLeftSidebar', for='openLeftSidebar')
+
+
+
+// .rightSidebar
+div(class='sidebar rightSidebar', data-role='rightSidebar')
+	// Mockup list for testing scroll
+	
+	-var j = 1
+	-var mocklist = 50
+
+	ul
+		while j < mocklist
+			li= j++
+
+// That close the .rightSidebar
+label(class='closeSidebar closeRightSidebar', for='openRightSidebar')
