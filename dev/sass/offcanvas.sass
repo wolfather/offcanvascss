@@ -1,6 +1,8 @@
+@import "components/_variables"
 @import "components/_mixins-and-placeholders"
 @import "components/_pagesNavigation"
 @import "components/_baseStyles"
+
 
 //simple reset
 body
@@ -46,12 +48,8 @@ body
 .sidebar,
 .content,
 .window
-	-webkit-transition: all 250ms ease 0s
-	-moz-transition: transform 250ms ease 0s
-	-ms-transition: transform 250ms ease 0s
-	-o-transition: transform 250ms ease 0s
-	transition: transform 250ms ease 0s
-
+	@each $_prop in $browserPrefix
+		#{$_prop}transition: all 250ms ease 0s
 
 
 .sidebar,

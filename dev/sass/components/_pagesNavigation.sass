@@ -66,6 +66,15 @@
 	color: #333
 
 
+@function my-calculation-function($some-number, $another-number)
+	@each $_class in ".page1", ".page2", ".page3", ".page4", 
+		@return $_class
+
+
+@function createItems()
+	@for $_i from 0 through 4
+		.page#{$_i}
+			+translateX(100% * $_i)
 
 .page1
 	+translateX

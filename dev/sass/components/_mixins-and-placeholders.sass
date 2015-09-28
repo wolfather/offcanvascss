@@ -1,16 +1,11 @@
 =navigationtransform($config : opacity)
-	-webkit-transition: transform, $config 500ms ease 0s
-	-moz-transition: transform, $config 500ms ease 0s
-	-ms-transition: transform, $config 500ms ease 0s
-	-o-transition: transform, $config 500ms ease 0s
-	transition: transform, $config 500ms ease 0s
+	@each $_prop in $browserPrefix
+		#{$_prop}transition: transform, $config 500ms ease 0s
 
 
 =translateX($axisX: 0)
-	-webkit-transform: translate($axisX, 0)
-	-ms-transform: translate($axisX, 0)
-	-o-transform: translate($axisX, 0)
-	transform: translate($axisX, 0)
+	@each $_prop in $browserPrefix
+		#{$_prop}transform: translate($axisX, 0)
 
 
 =fontDefault
@@ -24,18 +19,3 @@
 %widthHeightHundredPorcent
 	width: 100%
 	height: 100%
-
-
-
-
-
-//Variables
-$menuBgColor: #0459a5
-$menuStripesColor: #eee
-
-
-$bgPageColor: #eee
-$bgBtnPrimaryColor: #0e7bde
-$bgBtnSecondaryColor: #939393
-$bgSidebarColor: #ddd
-$textColor: #222
